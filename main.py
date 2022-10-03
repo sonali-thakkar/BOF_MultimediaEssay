@@ -15,20 +15,12 @@ def beginAdventure():
     print(" 2. My Background")
 
     story_num = int(input("Which story would you like to go through? (Enter 1 or 2): "))
-    attempts = 0
-    story_chosen = False
-    while ((story_chosen == False) ):
-        if (story_num != 1 or story_num != 2 and attempts < 6):
-            ++attempts
-            story_num = int(input("Sorry try again. Which story would you like to go through? (Enter 1 or 2): "))
-        elif (story_num == 1):
-            story_chosen = True
-            attempts = 6
-        elif (story_num == 2):
-            story_chosen = True
-            attempts = 6
-        elif (attempts >= 6):
-            story_chosen = True
+    validate_num(1,2, story_num)
+
+def validate_num(min, max, value):
+    while (value < min or value > max):
+        print(f"Sorry that choice is invalid, please enter a number- {min} or {max}")
+        value = int(input("New input: "))
 
 
 
