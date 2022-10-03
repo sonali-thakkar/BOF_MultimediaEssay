@@ -3,7 +3,6 @@
 # Multimedia Essay
 # Prompt: GPAs and college transcripts don’t paint a complete picture of a person.
 # What else do we need to know about you?
-# To experience this essay, please copy and paste this file into the main.py window of this website:
 
 
 
