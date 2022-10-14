@@ -3,22 +3,81 @@
     html{
         margin: 0;
         padding: 0;
-        background-image: url("../images/5891216.jpg");
+        background-image: url("../images/carina.webp");
     }
 
     body {
     
     max-width: 60%;
+    height: 100em;
     line-height: 1.3em;
     padding: 1%;
     margin: auto;
-    font-family: "Times New Roman", "Arial", "Verdana";
+    font-family: "Times New Roman", "Courier New", "Verdana";
     background-color: rgb(157, 210, 231);
     border: thin solid black;
     }
 
     h1, h2 {
         margin: 2%;
+    }
+    button {
+        background-color: lightgreen;
+        width: 30%;
+        height: 90%;
+        font-size:xx-large;
+    }
+    .grid-layout {
+        display: grid;
+        grid-template-columns: 10% 10% 10% 10% 10%;
+        grid-template-rows: 10% 10% 20% 10% 10%;
+        grid-auto-rows: 5%;
+        padding: .5%;
+        margin-left: 10%;
+        margin-right: 3%;
+        width: 150%;
+        height: 100%;
+        /* grid-template-areas: 
+        " . . . . . "
+        " . . start . ."
+        " . txt txt txt . "
+        " . choiceBtn1 . choiceBtn 2 . "
+        " . . . . . "; */
+
+
+    }
+    #start{
+        /* grid-area: start; */
+        grid-column: 3;
+        grid-row: 2;
+    }
+    #txtArea {
+        grid-column: 2/4;
+        grid-row: 3/5;
+    }
+    #txtDisplay{
+        /* grid-area: txt; */
+        grid-column: 2/4;
+        grid-row: 3/5;
+        background-color: white;
+        border-radius: 10%;
+        display:inline-block; 
+        width:90%;
+        
+    }
+    #choiceBtns {
+        grid-column: 2/4;
+        grid-row: 6;
+    }
+    #choiceBtn1 {
+        /* grid-area: choiceBtn1; */
+        grid-column: 2;
+        grid-row: 4;
+    }
+    #choiceBtn2 {
+        /* grid-area: choiceBtn2; */
+        grid-column: 4;
+        grid-row: 4;
     }
 </style>
 <html lang="en">
@@ -43,12 +102,41 @@
             
         </header>
 
-        <button onclick="start()">Start! </button>
 
+        <div name="mainPlay" class="grid-layout">
+            <div id="start" class="">
+                <button name="startBtn" onclick="start()" >Start! </button>
+            </div>
+
+            <div class="" id="txtArea">
+                <label id="txtDisplay"> Text will appear here</label>
+            </div>
+
+            <div id="choiceBtns" class="">
+                <button id="choiceBtn1"> Option 1</button>
+                <button id="choiceBtn2"> Option 2</button>
+
+
+            </div>
+
+        </div>
 
     </body>
+
+
+    <footer>
+      
+        <cite><a href="https://www.freepik.com/vectors/background">Background vector created by freepik - www.freepik.com</a></cite>     
+
+        <p>Sunny Thakkar's Multimedia Essay</p>
+    </footer>
 </html>
 
 <script>
+
+
+function start() {
+    my_text = document.getElementById("txtDisplay")
+}
 
 </script>

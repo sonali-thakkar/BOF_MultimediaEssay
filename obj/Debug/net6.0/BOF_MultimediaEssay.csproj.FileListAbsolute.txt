@@ -1,0 +1,15 @@
+/Users/sonali/Desktop/BOF_MultimediaEssay/bin/Debug/net6.0/BOF_MultimediaEssay
+/Users/sonali/Desktop/BOF_MultimediaEssay/bin/Debug/net6.0/BOF_MultimediaEssay.deps.json
+/Users/sonali/Desktop/BOF_MultimediaEssay/bin/Debug/net6.0/BOF_MultimediaEssay.runtimeconfig.json
+/Users/sonali/Desktop/BOF_MultimediaEssay/bin/Debug/net6.0/BOF_MultimediaEssay.dll
+/Users/sonali/Desktop/BOF_MultimediaEssay/bin/Debug/net6.0/BOF_MultimediaEssay.pdb
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.csproj.AssemblyReference.cache
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.AssemblyInfoInputs.cache
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.AssemblyInfo.cs
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.csproj.CoreCompileInputs.cache
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.dll
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/refint/BOF_MultimediaEssay.dll
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.pdb
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/BOF_MultimediaEssay.genruntimeconfig.cache
+/Users/sonali/Desktop/BOF_MultimediaEssay/obj/Debug/net6.0/ref/BOF_MultimediaEssay.dll
