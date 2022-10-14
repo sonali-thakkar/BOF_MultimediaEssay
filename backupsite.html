@@ -3,7 +3,8 @@
     html{
         margin: 0;
         padding: 0;
-        background-image: url("../images/carina.jpeg");
+        background-image: url("../images/space.jpeg");
+        background-color: rgb(104, 43, 226);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -145,29 +146,29 @@
 
 var story_1 = {
     start: "intro1",
-    "1": "step1",
-    "2": "step2",
-    "3": "step3",
-    4: "step4",
-    5: "step5",
-    6: "step6",
-    7: "step7",
-    8: "step8",
-    9: "step9",
-    10: "step10" 
+    one: "step1",
+    two: "step2",
+    three: "step3",
+    four: "step4",
+    five: "step5",
+    six: "step6",
+    seven: "step7",
+    eight: "step8",
+    nine: "step9",
+    ten: "step10" 
 }
 var story_2 = {
     start: "intro2",
-    1: "step1",
-    2: "step2",
-    3: "step3",
-    4: "step4",
-    5: "step5",
-    6: "step6",
-    7: "step7",
-    8: "step8",
-    9: "step9",
-    10: "step10" 
+    one: "step1",
+    two: "step2",
+    three: "step3",
+    four: "step4",
+    five: "step5",
+    six: "step6",
+    seven: "step7",
+    eight: "step8",
+    nine: "step9",
+    ten: "step10" 
 }
 
 var step_count = 0
@@ -178,6 +179,7 @@ var my_text = document.getElementById("txtDisplay")
 function start() {
     my_text.textContent = "Hi, My name is Sonali Thakkar (but I also go by Sunny) \n For my Multimedia Essay I've created this python program for you to run through. Here's how it works- \nLike a choose your own adventure book, this program walks you through a \"story,\" after reading each section, you will be given a choice and you can see how things continue from there!\n To start, here are your options \n1. A day in the Life \n2. Origin Story \nClick one of the options below to begin, and use the \"Start!\" button to start over!"
     my_story = 0
+    step_count = 0
 }
 
 function next_step(interval_num) {
@@ -188,17 +190,15 @@ function next_step(interval_num) {
     {
         // add choice to step_count to get next step
         step_count += interval_num
-        console.log("new step count: " + step_count)
         // display that step of the story
-        console.log(story_1.step_count)
-        my_text.textContent = story_1.step_count
+        display_step()
     }
     else if (my_story == 2) // going through story 2 dictionary
     {
         // add choice to step_count to get next step
         step_count += interval_num
         // display that step of the story
-        my_text.textContent = story_2.step_count
+        display_step()
     }
     else if (my_story == 0) //this click is the story choice
     {
@@ -206,15 +206,37 @@ function next_step(interval_num) {
         if (interval_num == 1) { 
             my_story = 1;  
             my_text.textContent = story_1.start
-            console.log(story_1.start)
             }
         else if (interval_num == 2) { 
             my_story = 2 
             my_text.textContent = story_2.start
-            console.log(story_2.start)
             }
     }
 
+}
+
+function display_step() {
+    if (step_count == 1) {
+        my_text.textContent = story_1.one
+    } else if (step_count == 2) {
+        my_text.textContent = story_1.two
+    } else if (step_count == 3) {
+        my_text.textContent = story_1.three
+    } else if (step_count == 4) {
+        my_text.textContent = story_1.four
+    } else if (step_count == 5) {
+        my_text.textContent = story_1.five
+    } else if (step_count == 6) {
+        my_text.textContent = story_1.six
+    } else if (step_count == 7) {
+        my_text.textContent = story_1.seven
+    } else if (step_count == 8) {
+        my_text.textContent = story_1.eight
+    } else if (step_count == 9) {
+        my_text.textContent = story_1.nine
+    } else if (step_count == 10) {
+        my_text.textContent = story_1.ten
+    }
 }
 
 </script>
